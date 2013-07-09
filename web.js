@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 fs = require('fs');
 app.get('/', function(request, response) {
 
-	fs.readFile('/doesnt/exist', 'utf8', function (err,data) {
+	fs.readFile('index.html', 'utf8', function (err,data) {
  	 if (err) {
    	 return console.log(err);
  	}
